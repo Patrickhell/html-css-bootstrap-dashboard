@@ -2,6 +2,21 @@ header{
     height: 80px;
     
 }
+.flex{
+    display:flex;
+    flex-direction: row;
+}
+.main-box{
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+.main-side {
+    width: 15vw;
+}
+.body-box {
+    width: 85vw;
+}
 
 .my_upper-main{
     height: 200px;
@@ -26,18 +41,18 @@ input{
   height: 100%;
   width: 100%;
   padding: 6px 10px;
-  padding-right: 5rem;
+
 }
  ::placeholder {
     color: #757575;
-    opacity: 0.7; 
+    opacity: 0.7;
+    font-size: 14px; 
 
   }
 
   button {
     all: unset;
     cursor: pointer;
-   
   }
   
   svg {
@@ -47,3 +62,8 @@ input{
     height: 40px;
     padding: 10px;
   }
+  ul{
+    list-style-type: none;
+  }
+
+  
