@@ -17,12 +17,12 @@
     <header>
         <div class="top-navbar">
             <div class="container-fluid text-center">
-                <div class="col-12 justify-content-between  row">
-                    <div class=" col-2 boolean-logo py-2">
-                        <img src="img/mobile-logo.png" alt="mobile-logo" style="width: 60px; height: 60px;">
+                <div class="col-12   justify-content-between  row">
+                    <div class=" col-3 col-md-2 col-lg-2  boolean-logo py-2 ">
+                        <img src="img/mobile-logo.png" alt="mobile-logo" style="width: 70px; height: 70px;">
                     </div>
-                    <div class=" col-9 asearch-bar py-4">
-                        <form class="my_form text-light " role="search">
+                    <div class=" col-8  col-lg-8 col py-4">
+                        <form class="my_form text-light  " role="search">
                              <button>
                                 <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
                             </button>
@@ -30,8 +30,25 @@
                              placeholder="Prova a cercare: Lezioni di Laravel" >
                         </form>
                     </div>
-                    <div class="col-1 py-4">
-                        <i class="fa-solid fa-bell fs-4" style="color: #ff8f00;"  ></i>
+                    <div class="col-1 col-md-1  col-lg-4 py-4 my_bell">
+                        <i class="fa-solid fa-bell fs-6" style="color: #ff8f00;"  ></i>
+                    </div>
+                    <div class=" col-lg-2 my_icons-hover py-lg-4 p-0">
+                        <ul class=" row ">
+                            <li class="col-2 px-1">
+                                <i class="fa-solid fa-list "></i>
+                            </li>
+                            <li class="col-2 ">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </li>
+                            <li class="col-2">
+                                <i class="fa-solid fa-ellipsis-vertical "></i>
+                            </li>
+                            <li class="col-2 px-1"> 
+                                <i class="fa-solid fa-bell fs-5 " style="color: #ff8f00;"  ></i>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -39,11 +56,11 @@
     </header>
 
     <main>
-        <div class="main-box ">
-            <div class="container-fluid">
-                <div class=" flex">
-                    <div class="main-side " style="background-color:#051e34 ;">
-                        <ul class="text-white fs-4 py-5 row">
+        <div class=" main-box  ">
+            <div class=" my_flex container-fluid  ">
+                <div class="lateral-side my_hidden-text " style="background-color:#051e34 ;">
+                    <div class="my_column text-center  ">
+                        <ul class="  my-flex text-white my-5 mx-md-2 ">
                             <li class="mb-2">
                                 <i class="fa-solid fa-house "></i>
                             </li>
@@ -51,26 +68,386 @@
                                 <i class="fa-solid fa-chart-simple"></i>
                             </li>
                             <li >
-                                <i class="fa-solid fa-signal"></i>
+                                <i class="fa-solid fa-signal "></i>
+                            </li>
+                        </ul>
+                        <ul class=" text-white ">
+                            <li>
+                                <i class="fa-solid fa-gear"></i>
                             </li>
                         </ul>
                         
+                    </div> 
+                </div>
+                <div class="lateral-side " style="background-color:#051e34 ;" style="background-image:url(img/sidebar-bg.png) ;">
+                    <div class="my_lg-icon-text my_column ">
+                        <ul class="flex text-white my-icon-lat-side my-5 my-lg-3 mx-md-2 mx-lg-4">
+                            <li class="">
+                                <i class="fa-solid fa-house mx-lg-2"></i>
+                            </li>
+                            <p>Home</p>
+                        </ul>
+                        <ul class="flex text-white my-icon-lat-side my-5  my-lg-2 mx-md-2 mx-lg-4">
+                            <li >
+                                <i class="fa-solid fa-chart-simple mx-lg-2"></i>
+                             </li>
+                             <p>Stats</p>
+                        </ul>
+                        <ul class="flex text-white my-icon-lat-side my-5  my-lg-1 mx-md-2 mx-lg-4">
+                        <li >
+                            <i class="fa-solid fa-signal mx-lg-2 "></i>
+                        </li>
+                        <p>Signals</p>
+                        </ul>
                     </div>
-                    <div class="body-box ">
-                        <div class="my_upper-main" style="background-color: #1b72e8;">
-                         
+                    
+                </div>
+                <div class=" body-box container-fluid column text-start ">
+                    <div class=" upper-main  row  justify-content-md-between  py-3 " style="background-color: #1b72e8;">
+                        <div class=" col-7 order-md-last col-md-4 col-lg-3 text-white">
+                            <div class=" row py-sm-1 text-lg-end">
+                                <div class=" col-6 col-md-7 fw-semibold  my-sm-4 my-md-1 my-lg-3  my_font "> Nuovo Studente</div>
+                                <div class=" col-1 col-md-1 fs-1 my_icon-add  pt-sm-2 p-md-0 ">
+                                    <i class="fa-regular fa-square-plus"></i>
+                                </div>
+                            </div>
+
+                        </div>      
+                        <div class=" col-8 col-md-4  col-lg-5 order-md-first text-white  ">
+                            <div class="row align-content-sm-start">
+                                <div class="col-4 col-md-6 col-lg-4 fs-3">Boolean</div>
+                                <div class="col-4 col-md-6 col-lg-4  pt-sm-3   pt-lg-3 my_font  ">Piano blaze</div>
+                            </div>
+                            <div class=" col-7 text-white mb-4 my_hidden-text">
+                                <div class="row my_font-size ">
+                                    <div class="col-4 text-sm-end">3 app</div>
+                                    <div class="col-1  p-0 g-0 text-sm-start"> 
+                                        <i class="fa-solid fa-angles-right  "></i>
+                                    </div>
+                                    <div class="col-2 p-0 g-0 ">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div> 
+                                    
+                            </div>
+                        
+                            <div class=" col-lg-12 text-white  text-lg-start my_lg-text ">
+                                <div class="row">
+                                   <p class="col-lg-1 ">3 app</p>
+                                   <div class="col-lg-1  ">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                   </div>
+                                   
+                                   <p class="col-lg-4 "> Boolean mobile app </p>
+                                    <p class="col-lg-3 ">Boolean web app</p>
+                                    <p class="col-lg-3 ">Boolean blog app</p>
+                                </div> 
+                            </div>
+                                
+                        </div>                     
+                        <div class=" col-12 col-md-3  col-lg-3 text-white my_font  pt-lg-2 mx-auto">
+                            <p class="text-lg-start "> Studenti online negli ultimi 30 minuti</p>
+                            <p class="fs-5"> 125</p>
+                        </div>                   
+                    </div>
+
+                    <div class="my_down-main container-fluid" >
+                        <div class=" my_card-sm " >
+                            <div class="card mt-sm-4 mb-3  ">
+                                <h4 class="card-header">
+                                  Prossime classi
+                                </h4>
+                                <div class="container-fluid">
+                                    <div class="card-body  ">
+                                        <div class="col-12 mb-2  ">
+                                            <div class="row  fs-6 fw-semibold align-content-b ">
+                                                <div class="col-6 text-sm-center" >
+                                                    Nome
+                                                </div>
+                                                <div class="col-3  text-sm-center px-sm-1">
+                                                    Stato
+                                                </div>
+                                                <div class="col-3 text-sm-center ">
+                                                    Azioni
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="table text-sm-center my_font">
+                                            <tbody>
+                                              <tr class="col-12">
+                                                <th scope="row col-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-1"></td>
+                                                <td class="col-2 text-sm-start ">Done</td>
+                                                <td scope="row col-6 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-12">
+                                                <th scope="row col-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-1"></td>
+                                                <td class="col-2 text-sm-start ">Done</td>
+                                                <td scope="row col-6 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-12">
+                                                <th scope="row col-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-1"></td>
+                                                <td class="col-2 text-sm-start ">Done</td>
+                                                <td scope="row col-6 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-12">
+                                                <th scope="row col-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-1"></td>
+                                                <td class="col-2 text-sm-start ">Done</td>
+                                                <td scope="row col-6 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-12">
+                                                <th scope="row col-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-1"></td>
+                                                <td class="col-2 text-sm-start ">Done</td>
+                                                <td scope="row col-6 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-12">
+                                                <th scope="row col-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-1"></td>
+                                                <td class="col-2 text-sm-start ">Done</td>
+                                                <td scope="row col-6 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-12">
+                                                <th scope="row col-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-1"></td>
+                                                <td class="col-2 text-sm-start ">Done</td>
+                                                <td scope="row col-6 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-12">
+                                                <th scope="row col-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-1"></td>
+                                                <td class="col-2 text-sm-start ">Done</td>
+                                                <td scope="row col-6 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              
+                                            </tbody>
+                                          </table>
+    
+                                                                                                                                                      
+                                    </div>
+                                </div>                       
+                            </div>
                         </div>
-                        <div class="my_down-main" >
-                           
+                        <div class="my_card-md">
+                            <div class="card mt-sm-4 mb-3  ">
+                                <h5 class="card-header">
+                                  Prossime classi
+                                </h5>
+                                <div class="container-fluid">
+                                    <div class="card-body  ">
+                                        <div class="col-md-12 mb-2 text-md-center p ">
+                                            <div class="row  my_md-font fw-semibold align-content-b ">
+                                                <div class=" col-md-4 text-sm-center" >
+                                                    Nome
+                                                </div>
+                                                <div class=" col-md-3">
+                                                    Data inizio
+                                                </div>
+                                                <div class="col-md-1 ">ROI</div>
+                                                <div class="col-md-2  text-sm-center  px-sm-1">
+                                                    Stato
+                                                </div>
+                                                <div class="col-md-2 text-sm-center ">
+                                                    Azioni
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="table text-sm-center  my_font">
+                                            <tbody>
+                                              <tr class="col-md-12">
+                                                <th scope="row col-md-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-md-3"> 15 Febbraio</td>
+                                                <td class="col-md-1 "> 20%</td>
+                                                <td class="col-md-2  ">Done</td>
+                                                <td scope="row col-md-3 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-md-12">
+                                                <th scope="row col-md-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-md-3"> 15 Febbraio</td>
+                                                <td class="col-md-1 "> 20%</td>
+                                                <td class="col-md-2  ">Done</td>
+                                                <td scope="row col-md-3 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-md-12">
+                                                <th scope="row col-md-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-md-3"> 15 Febbraio</td>
+                                                <td class="col-md-1 "> 20%</td>
+                                                <td class="col-md-2  ">Done</td>
+                                                <td scope="row col-md-3 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-md-12">
+                                                <th scope="row col-md-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-md-3"> 15 Febbraio</td>
+                                                <td class="col-md-1 "> 20%</td>
+                                                <td class="col-md-2  ">Done</td>
+                                                <td scope="row col-md-3 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-md-12">
+                                                <th scope="row col-md-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-md-3"> 15 Febbraio</td>
+                                                <td class="col-md-1 "> 20%</td>
+                                                <td class="col-md-2  ">Done</td>
+                                                <td scope="row col-md-3 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-md-12">
+                                                <th scope="row col-md-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-md-3"> 15 Febbraio</td>
+                                                <td class="col-md-1 "> 20%</td>
+                                                <td class="col-md-2  ">Done</td>
+                                                <td scope="row col-md-3 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-md-12">
+                                                <th scope="row col-md-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-md-3"> 15 Febbraio</td>
+                                                <td class="col-md-1 "> 20%</td>
+                                                <td class="col-md-2  ">Done</td>
+                                                <td scope="row col-md-3 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                              <tr class="col-md-12">
+                                                <th scope="row col-md-3 "><img src="img/class-avatar.jpg" alt="avatar" style="width: 25px;height: 25px;"> Classe 75</th>
+                                                <td class="col-md-3"> 15 Febbraio</td>
+                                                <td class="col-md-1 "> 20%</td>
+                                                <td class="col-md-2  ">Done</td>
+                                                <td scope="row col-md-3 ">                                      
+                                                    <i class="fa-solid fa-pen"></i>                                       
+                                                    <i class="fa-solid fa-trash my_padding-left"></i>                                            
+                                                </td>
+                                              </tr>
+                                             
+                                              
+                                            </tbody>
+                                        </table>
+    
+                                                                                                                                                      
+                                    </div>
+                                </div>                       
+                            </div>
+                        </div>
+                       
+
+                            
+                        <div class="card mb-3">
+                            <h5 class="card-header ">
+                              F.A.Q
+                            </h5>
+                            <div class="container-fluid">
+                                <div class="card-body ">
+                                    <div class="accordion open accordion-flush accordion-body-padding-x" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                             Come aggiungere un nuovo studente
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong> Clicca sul + in alto nell sezione blu."</strong> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>Clicca sull'icona della campanella.</strong> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Posso usare questa dashboard da mobile
+                                            </button>
+                                            </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </strong> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>  
+                                </div>   
+                            </div>              
                         </div>
 
+                        <div class="card">
+                            <h5 class="card-header">
+                              TODO
+                            </h5>
+                            <div class="card-header">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check2" name="Kickoff nuove class" value="classi">
+                                    <label class="form-check-label px-1 py-2" for="check2"> Kickoff nuove classi</label>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <div class="form-check ">
+                                    <input type="checkbox " class="form-check-input" id="check2" name="Lezione in Boostrap 5 in classe #75" value="#75">
+                                    <label class="form-check-label px-1 py-2" for="check2">Lezione in Boostrap 5 in classe #75</label>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check2" name="Controllare username GitHub studenti" value="studenti">
+                                    <label class="form-check-label px-1 py-2 " for="check2">Controllare username GitHub studenti</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                    
             </div>
-        </div>
-        
-
     </main>
 
     <footer>
