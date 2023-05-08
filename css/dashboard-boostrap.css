@@ -15,6 +15,10 @@ flex-direction: row;
 flex-wrap: wrap;
 }
 
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
 [class*="col-"] {
 flex: 0 0 auto;
 
