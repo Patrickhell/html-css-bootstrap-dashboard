@@ -126,8 +126,38 @@
                         <div class=" col-7 order-md-last col-md-4 col-lg-3 text-white">
                             <div class=" row py-sm-1 text-lg-end">
                                 <div class=" col-6 col-md-7 fw-semibold  my-sm-4 my-md-1 my-lg-3  my_font "> Nuovo Studente</div>
-                                <div class=" col-1 col-md-1 fs-1  pt-sm-2 p-md-0 rounded ">
-                                    <i class="fa-regular fa-square-plus"></i>
+                                <div class=" col-1 col-md-1 fs-1  pt-sm-2 p-md-0 rounded  ">
+                                    <button class="fa-regular fa-square-plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
+                                    </button>
+                                    <div class="offcanvas offcanvas-end "  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title text-dark" id="offcanvasRightLabel">Inserisci un nuovo Studente</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body text-dark ">
+                                            <div class="row  ">
+                                                <form class="row  needs-validation " novalidate>
+                                                    <div class="col-md-6 py-5">
+                                                      <label for="validationstudent" class="form-label">Nome</label>
+                                                      <input type="text" class="form-control" id="validationstudent" value="" required>
+                                                      <div class="valid-feedback">
+                                                       
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-6 py-5">
+                                                      <label for="validationstudent" class="form-label">Cognome</label>
+                                                      <input type="text" class="form-control" id="validationstudent" value="" required>
+                                                      <div class="valid-feedback">
+                                                       
+                                                      </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                         
+                                         
+                                        </div>
+                                    </div>     
                                 </div>
                             </div>
 
