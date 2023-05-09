@@ -1,28 +1,28 @@
 header{
     height: 80px;
-    
 }
-.my_flex{
-    display:flex;
-    flex-direction: row;
-}
+
 .my_column{
     display: flex;
     flex-direction: column;
+    
+}
+.my_justify-content{
+  justify-content: space-between;
 }
 
-.main-box{
-    width: 100%;
-    height: calc(100vh - 80px)
+
+.my_body-box{
+    width: 80%;
+    height: 100%;
+    
 }
 
-.lateral-side {
-    width: 8vw;
+.my_lateral-nav {
+    width: 15%;
 }
 
-.body-box {
-    width: 95vw;
-}
+
 
 .my_form{
     width: 100%;
@@ -74,11 +74,16 @@ input{
     font-size: 10px;
   }
 
-
-  .my_icon-add{
-    font-size: 35px;
+  .my_hidden-text{
+    display: none;
+  }
+  .my_lateral-side{
+    display: block;
   }
 
+  .my_badge-padding-x{
+    padding: 1rem;
+  }
 
   .my_icons-hover{
     display: none;
@@ -96,10 +101,10 @@ input{
 }
 
 .my_font-card{
-    font-size: 12px;
+    font-size: 13px;
 }
 .my_font{ 
-    font-size: 12px;
+    font-size: 11px;
 
 }
 .my_md-font{
@@ -119,6 +124,21 @@ input{
 .my_card-md{
     display: none;
 }
+
+.my_zoom-icon, .my_zoom-effect{
+  transition: transform .2s;
+}
+
+.my_zoom-icon:hover {
+  -ms-transform: scale(1); 
+  -webkit-transform: scale(1); 
+  transform: scale(1);
+  background-color: lightgray;
+  cursor: pointer;
+
+ 
+}
+
 
 
 
@@ -153,10 +173,16 @@ input{
 
   @media screen and (min-width: 992px){
 
-
-.lateral-side {
-    width: 15vw;
-}
+    .my_hidden-text {
+      display: block;
+      justify-content: space-between;
+      
+    }
+    .my_lateral-side{
+      display: none;
+    }
+  
+  
     .my_icons-hover{
         display: block;
         color: gray;
@@ -176,9 +202,7 @@ input{
         margin-right: 0px;
     }
 
-    .my_hidden-text{
-        display: none;
-    }
+  
     .my_lg-icon-text  {
         display: block;
     }
