@@ -1,5 +1,5 @@
 header{
-    height: 80px;
+    height: 70px;
 }
 
 .my_column{
@@ -7,22 +7,17 @@ header{
     flex-direction: column;
     
 }
-.my_justify-content{
-  justify-content: space-between;
+
+
+.my_lateral-nav, .my_md-sm-lateral-icon{
+  width: 100px;
+  background-color: #051e34;
+  background-image: url(../img/sidebar-bg.png);
 }
 
-
-.my_body-box{
-    width: 80%;
-    height: 100%;
-    
+.my_body-box {
+  width: calc(100% - 100px);
 }
-
-.my_lateral-nav {
-    width: 15%;
-}
-
-
 
 .my_form{
     width: 100%;
@@ -35,7 +30,7 @@ header{
   text-align: left;
   
 }
-input{
+#query{
     all: unset;
   font: 16px system-ui;
   color: #fff;
@@ -51,6 +46,16 @@ input{
     
 
   }
+
+  td.spacing{
+    width: 50%;
+    text-align: left;
+  }
+  th.spacing{
+    width: 50%;
+    text-align: left;
+  }
+
 
   button {
     all: unset;
@@ -77,16 +82,16 @@ input{
   .my_hidden-text{
     display: none;
   }
-  .my_lateral-side{
+  .my_md-sm-lateral-icon{
     display: block;
   }
 
-  .my_badge-padding-x{
-    padding: 1rem;
-  }
-
-  .my_icons-hover{
+  .my_icons-hidden{
     display: none;
+}
+
+.my_bell-hidden {
+  display: block;
 }
 
 .my_padding-left{
@@ -94,7 +99,7 @@ input{
 }
 
 .my_padding-right{
-   padding-right: 10px;
+   padding-right: 8px;
 }
 .my_lg-icon-text  {
     display: none;
@@ -104,7 +109,7 @@ input{
     font-size: 13px;
 }
 .my_font{ 
-    font-size: 11px;
+    font-size: 14px;
 
 }
 .my_md-font{
@@ -125,6 +130,15 @@ input{
     display: none;
 }
 
+.btn {
+  width: 8px;
+  height: 20px;
+  
+}
+.badge{
+  background-color:#165bba ;
+}
+
 .my_zoom-icon, .my_zoom-effect{
   transition: transform .2s;
 }
@@ -136,77 +150,72 @@ input{
   background-color: lightgray;
   cursor: pointer;
 
- 
 }
 
 
-
-
-
-
-
-
-
   @media screen and (min-width: 768px){
-    .my_form{
-        width:100% ;
-        
+  
+  .my_upper-main{
+    height: 120px;
   }
 
-  .my-icon-lat-side{
-    width: 50%;
-    
-  } 
   .my_font{
     font-size: 13px
   }
 
-.my_card-sm{
+  .my_card-sm{
     display: none;
-}
-.my_card-md{
+  }
+
+  .my_card-md{
     display: block;
-}
+  }
 
 
 }
 
   @media screen and (min-width: 992px){
+    .my_upper-main{
+      height: 135px;
+    }
+    .my_lateral-nav, .my_md-sm-lateral-icon{
+      width: 165px;
+    }
+    
+    .my_body-box {
+      width: calc(100% - 165px);
+    }
+    
 
     .my_hidden-text {
       display: block;
-      justify-content: space-between;
-      
     }
-    .my_lateral-side{
+
+    .my_md-sm-lateral-icon{
       display: none;
     }
   
-  
-    .my_icons-hover{
+    .my_icons-hidden{
         display: block;
         color: gray;
-    
     }
-    .my_bell {
+
+    .my_bell-hidden{
         display: none;
     }
 
     .my_lg-text{
         display: block;
         font-size: 9px;
-        
-    
-    }
-    .my_margin-right{
-        margin-right: 0px;
     }
 
-  
     .my_lg-icon-text  {
         display: block;
     }
-      
+
+    .my_hidden-icon-text{
+      display: none;
+    }  
 
 
 
