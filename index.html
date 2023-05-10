@@ -74,8 +74,8 @@
     </header>
 
     <main class="d-flex">
-        <section class="my_lateral-nav " >
-            <div class="my_hidden-text  " >
+        <section class="my_lateral-nav  d-flex flex-column justify-content-between " >
+            <div class="my_hidden-text" >
                 <div class="my_lg-icon-text text-lg-center pt-lg-4 text-white my_font ">
                     <ul class=" d-flex my_zoom-icon">
                         <li >
@@ -97,13 +97,9 @@
                     </ul>
                      
                 </div>
-                <div class="text-lg-center">
-                    <i class="fa-solid fa-gear  text-white my_font"></i>
-                </div>
-                
-                
             </div>
-            <div class="my_md-sm-lateral-icon my_column  justify-content-between pt-sm-4" >
+          
+            <div class="my_md-sm-lateral-icon pt-sm-4" >
                 <div class="text-white my_font">
                     <ul class="my_zoom-icon">
                         <li >
@@ -119,16 +115,8 @@
                         <li >
                          <i class="fa-solid fa-signal "></i>
                         </li>
-                    </ul>
-                     
+                    </ul>                   
                 </div>
-                <ul class=" text-white  my_font">
-                    <li>
-                        <i class="fa-solid fa-gear"></i>
-                    </li>
-                                 
-                </ul>
-                
             </div>
         </section>
         <section class=" my_body-box container-fluid column text-start "> 
@@ -136,36 +124,93 @@
                 <div class=" order-md-last col-md-4 col-lg-3 text-white">
                     <div class=" d-flex pt-sm-4 pt-md-3">
                         <div class=" col-md-7 fw-semibold  mb-sm-5  "> Nuovo Studente</div>
-                        <div class="  col-md-1  mx-sm-3 mx-lg-0 ">
-                            <button class="fa-solid fa-plus my_md-font btn btn-outline-secondary border-white text-white text-lg-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <div class="  col-md-1  mx-sm-2 mx-lg-0 ">
+                            <button class="fa-solid fa-plus  btn btn-outline-secondary border-white text-white " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                               
                             </button>
-                            <div class="offcanvas offcanvas-end "  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas offcanvas-end my_offcancas-width "  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                   <h5 class="offcanvas-title text-dark" id="offcanvasRightLabel">Inserisci un nuovo Studente</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
-                                <div class="offcanvas-body text-dark ">
-                                    <div class="row  ">
-                                        <form class="row  needs-validation " novalidate>
-                                            <div class="col-md-6 py-5">
-                                              <label for="validationstudent" class="form-label">Nome</label>
-                                              <input type="text" class="form-control" id="validationstudent" value="" required>
-                                              <div class="valid-feedback">
-                                               
-                                              </div>
+                                <div class="offcanvas-body text-dark my_font ">
+                                    <form class="row g-3 needs-validation " novalidate>
+                                        <div class="col-md-6  mb-3 ">
+                                          <label for="validationDefault01" class="form-label">Nome</label>
+                                          <input type="text" class="form-control" id="validationDefault01" value="" required>
+                                          <div class="valid-feedback">
+                                           
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3 ">
+                                          <label for="validationDefault01" class="form-label">Cognome</label>
+                                          <input type="text" class="form-control" id="validationDefault01" value="" required>
+                                          <div class="valid-feedback">
+                                           
+                                          </div>
+                                        </div>
+                                    </form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationDefaultUsername" class="form-label">Email</label>
+                                            <div class="input-group">
+                                              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                              <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
                                             </div>
-                                            <div class="col-md-6 py-5">
-                                              <label for="validationstudent" class="form-label">Cognome</label>
-                                              <input type="text" class="form-control" id="validationstudent" value="" required>
-                                              <div class="valid-feedback">
-                                               
-                                              </div>
-                                            </div>
-                                        </form>
+                                      </div>
+                                        <div class="col-md-6 mb-3 ">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+
                                     </div>
-                                 
-                                 
+                                    <div class="col-12 mb-3">
+                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationCustom03" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="validationCustom03" required>
+                                            <div class="invalid-feedback">                                          
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <label for="validationCustom04" class="form-label">Stato</label>
+                                            <select class="form-select" id="validationCustom04" required>
+                                              <option selected disabled value="">Scegli</option>
+                                              <option>...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                              
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <label for="validationCustom05" class="form-label">Cap</label>
+                                            <input type="text" class="form-control" id="validationCustom05" required>
+                                            <div class="invalid-feedback">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="list-group-item mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                        <label class="form-check-label" for="flexCheck">
+                                          Seleziona per proseguire
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                          <div class="col-1 ">
+                                            <button type="submit" class="btn btn-primary text-white">Salva</button>
+                                          </div>
+                                          <div class="col-1 mx-lg-3 mx-sm-4 mx-md-2">
+                                            <button class="btn btn-warning" type="submit">Svuota</button>
+                                          </div>
+                                    </div>
+                                    
                                 </div>
                             </div>     
                         </div>
@@ -241,10 +286,10 @@
                                                     <td ></td>
                                                     <td ><span class="badge text-bg-success">Done</span></td>
                                                     <td > 
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                           <i class="fa-solid fa-pen "></i> 
                                                         </button>  
-                                                        <button type="button" class="btn btn-outline-secondary">                                  
+                                                        <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                           <i class="fa-solid fa-trash"></i>
                                                         </button>                                            
                                                     </td>
@@ -254,10 +299,10 @@
                                                     <td ></td>
                                                     <td ><span class="badge text-bg-success">Done</span></td>
                                                     <td >                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                          
                                                     </td>
@@ -267,10 +312,10 @@
                                                     <td ></td>
                                                     <td ><span class="badge text-bg-warning">Process</span></td>
                                                     <td >                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                         
                                                     </td>
@@ -280,10 +325,10 @@
                                                     <td ></td>
                                                     <td ><span class="badge text-bg-success">Done</span></td>
                                                     <td >                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                          
                                                     </td>
@@ -293,10 +338,10 @@
                                                     <td ></td>
                                                     <td ><span class="badge text-bg-danger">Failled</span></td>
                                                     <td >                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                         
                                                     </td>
@@ -306,10 +351,10 @@
                                                     <td ></td>
                                                     <td ><span class="badge text-bg-success">Done</span></td>
                                                     <td scope="d-flex  ">                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                         
                                                     </td>
@@ -319,10 +364,10 @@
                                                     <td ></td>
                                                     <td ><span class="badge text-bg-danger">Failled</span></td>
                                                     <td >                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                           
                                                     </td>
@@ -332,10 +377,10 @@
                                                     <td ></td>
                                                     <td ><span class="badge text-bg-success">Done</span></td>
                                                     <td >                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                        
                                                     </td>
@@ -373,10 +418,10 @@
                                                     <td> 20%</td>
                                                     <td><span class="badge text-bg-success">Done</span></td>
                                                     <td>                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                           
                                                     </td>
@@ -387,10 +432,10 @@
                                                     <td> 20%</td>
                                                     <td ><span class="badge text-bg-success">Done</span></td>
                                                     <td>                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                           
                                                     </td>
@@ -401,10 +446,10 @@
                                                     <td > 20%</td>
                                                     <td><span class="badge text-bg-warning">Process</span></td>
                                                     <td >                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                            
                                                     </td>
@@ -415,10 +460,10 @@
                                                     <td> 20%</td>
                                                     <td><span class="badge text-bg-success">Done</span></td>
                                                     <td>                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                           
                                                     </td>
@@ -429,10 +474,10 @@
                                                     <td> 20%</td>
                                                     <td><span class="badge text-bg-danger">Failled</span></td>
                                                     <td>                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash"></i>
                                                         </button>                                            
                                                     </td>
@@ -443,10 +488,10 @@
                                                     <td> 20%</td>
                                                     <td><span class="badge text-bg-success">Done</span></td>
                                                     <td>                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                           
                                                     </td>
@@ -457,10 +502,10 @@
                                                     <td> 20%</td>
                                                     <td><span class="badge text-bg-danger">Failled</span></td>
                                                     <td >                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen text-start"></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash text-center"></i>
                                                         </button>                                          
                                                     </td>
@@ -471,10 +516,10 @@
                                                     <td> 20%</td>
                                                     <td><span class="badge text-bg-success">Done</span></td>
                                                     <td>                                      
-                                                        <button type="button" class=" btn btn-outline-secondary">                                  
+                                                        <button type="button" class=" btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-pen "></i> 
                                                           </button>  
-                                                          <button type="button" class="btn btn-outline-secondary">                                  
+                                                          <button type="button" class="btn btn-outline-secondary my_button">                                  
                                                             <i class="fa-solid fa-trash "></i>
                                                         </button>                                           
                                                     </td>
@@ -489,12 +534,12 @@
                                     </div>                       
                                 </div>
                             </div>
-                            <div class="card  my_font">
+                            <div class="card mb-3 my_font">
                                 <h5 class="card-header ">
                                   F.A.Q
                                 </h5> 
                             </div>
-                            <div class="card-body my_font mb-3">
+                            <div class="card-body my_font ">
                                 <div class="accordion open accordion-flush accordion-body-padding-x" id="accordionExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingOne">
@@ -533,7 +578,7 @@
                                         </div>
                                     </div>
                                 </div>     
-                            </div>         
+                            </div>                                    
                         </div>
                         <div class="col-lg-4 px-lg-1">
                             <div class="container-fluid">
@@ -542,22 +587,22 @@
                                       TODO
                                     </h5>
                                     <div class="card-header">
-                                        <div class="list-group-item ">
-                                            <input type="checkbox " class="form-check-input" id="" >
-                                            <label  for="check2">Kickoff nuove classi</label>
-                                        </div>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                        <label class="form-check-label" for="flexCheck">
+                                          Kickoff nuovi classi
+                                        </label>
                                     </div>
                                     <div class="card-header">
-                                        <div class="list-group-item ">
-                                            <input type="checkbox " class="form-check-input" id="" >
-                                            <label  for="check2">Lezione in Boostrap 5 in classe #75</label>
-                                        </div>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                        <label class="form-check-label" for="flexCheck">
+                                         Lezioni in Boostrap 5 in classe #75
+                                        </label>
                                     </div>
                                     <div class="card-header">
-                                        <div class="list-group-item">
-                                            <input type="checkbox " class="form-check-input" id="" >
-                                            <label  for="check2">Controllare username GitHub studenti</label>
-                                        </div>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                        <label class="form-check-label" for="flexCheck">
+                                          Controllare username Githup studenti
+                                        </label>
                                     </div>
                                 </div>   
                             </div>

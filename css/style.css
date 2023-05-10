@@ -72,6 +72,7 @@ header{
   ul{
     list-style-type: none;
   }
+
   .my_lg-text{
     display: none;
   }
@@ -130,14 +131,16 @@ header{
     display: none;
 }
 
-.btn {
+.my_button {
   width: 8px;
   height: 20px;
-  
+
 }
+
 .badge{
   background-color:#165bba ;
 }
+
 
 .my_zoom-icon, .my_zoom-effect{
   transition: transform .2s;
@@ -151,6 +154,11 @@ header{
   cursor: pointer;
 
 }
+
+#offcanvasRight{
+  width: 530px;
+
+ }
 
 
   @media screen and (min-width: 768px){
@@ -170,6 +178,11 @@ header{
   .my_card-md{
     display: block;
   }
+  #offcanvasRight{
+    width: 775px;
+
+   }
+
 
 
 }
@@ -215,7 +228,13 @@ header{
 
     .my_hidden-icon-text{
       display: none;
-    }  
+    }
+
+    #offcanvasRight{
+     width: 630px;
+
+    }
+
 
 
 
