@@ -156,7 +156,7 @@ header{
 }
 
 #offcanvasRight{
-  width: 530px;
+  width: 100%;
 
  }
 
@@ -178,12 +178,7 @@ header{
   .my_card-md{
     display: block;
   }
-  #offcanvasRight{
-    width: 775px;
-
-   }
-
-
+ 
 
 }
 
@@ -231,7 +226,7 @@ header{
     }
 
     #offcanvasRight{
-     width: 630px;
+     width: 55%;
 
     }
 
